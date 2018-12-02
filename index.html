@@ -1,0 +1,82 @@
+<!doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Trivia Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+</head>
+<body>
+    <!-- defining the wrapper -->
+    <div class="wrapper">
+
+        <h1 id="head">Totally Trivial Trivia!</h1>
+
+        <button id="start"> Start </button>
+
+        <div id="main" class="test">
+            
+            <h2>Time Remaining: <span id = "count"></span> Seconds </h2>
+            <section id="buttons">
+                <p class="para">Which team has won the most Soccer World Cups?</p>
+                <form>
+                    <input type="radio" name="gender" value="Brazil" class="1" id="1"> Brazil
+                    <input type="radio" name="gender" value="Germany" class="1" id="2"> Germany
+                    <input type="radio" name="gender" value="Argentina" class="1" id="3"> Argentina
+                    <input type="radio" name="gender" value="France" class="1" id="4"> France
+                  </form>
+
+                <p class="para">Which team scored the most goals in 2018 Soccer World Cup?</p>
+                <form>
+                    <input type="radio" name="gender" value="Brazil" class="2" id="5"> Brazil 
+                    <input type="radio" name="gender" value="Croatia" class="2" id="6"> Croatia 
+                    <input type="radio" name="gender" value="Belgium" class="2" id="7"> Belgium  
+                    <input type="radio" name="gender" value="France" class="2" id="8"> France   
+                </form>
+
+                <p class="para">Which player scored the highest number of goals in 2018 Soccer World Cup?</p>
+                <form>
+                    <input type="radio" name="gender" value="Harry KANE" class="3" id="9"> Harry KANE 
+                    <input type="radio" name="gender" value="Antoine Griezmann" class="3" id="10"> Antoine Griezmann 
+                    <input type="radio" name="gender" value="Romelu Lukaku" class="3" id="11"> Romelu Lukaku  
+                    <input type="radio" name="gender" value="Neymar Jr" class="3" id="12"> Neymar Jr   
+                </form>
+
+                <p class="para">Which player won the FIFA Young Player Award for year 2018?</p>
+                <form>
+                    <input type="radio" name="gender" value="Harry KANE" class="4" id="13"> Harry KANE 
+                    <input type="radio" name="gender" value="Kylian Mbappe" class="4" id="14"> Kylian Mbappe 
+                    <input type="radio" name="gender" value="Paul Pogba" class="4" id="15"> Paul Pogba  
+                    <input type="radio" name="gender" value="Marcus Rashford" class="4" id="16"> Marcus Rashford   
+                </form>
+
+            </section>
+            
+        </div>
+        <br>
+        <br>
+        <div class="test" id = "submit">
+        <button id="done">SUBMIT</button>
+        </div>
+        <div class="result" id="final">
+            <h2>ALL DONE!</h2>
+            <p>Correct Answers: <span id="win"></span></p>
+            <p>Incorrect Answers: <span id="loss"></span></p>
+            <p>Unanswered: <span id="na"></span></p>
+        </div>
+
+
+
+
+
+
+    </div>
+
+    <script src="assets/javascript/app.js"></script>
+    
+</body>
+</html>
